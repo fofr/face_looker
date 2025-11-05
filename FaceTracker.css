@@ -6,7 +6,6 @@
   background: #f0f0f0;
   border-radius: 8px;
   overflow: hidden;
-  cursor: none; /* Hide cursor for better effect */
 }
 
 .face-image {

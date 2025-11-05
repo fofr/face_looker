@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Face Looker (Vanilla)</title>
+  <link rel="stylesheet" href="./FaceTracker.css">
+  <style>
+    html, body { height: 100%; margin: 0; }
+    body { display: flex; align-items: center; justify-content: center; background: #fafafa; }
+    .container { width: 360px; height: 360px; }
+    .header { position: fixed; top: 16px; left: 50%; transform: translateX(-50%); font-family: ui-sans-serif, system-ui, Arial, sans-serif; color: #333; }
+  </style>
+</head>
+<body>
+  <div class="header">Move your cursor around the face</div>
+  <div class="container">
+    <div class="face-tracker" id="face" data-base-path="faces/" data-debug="false"></div>
+  </div>
+
+  <script src="./face-tracker.js" defer></script>
+</body>
+</html>
